@@ -1,0 +1,73 @@
+*{
+    margin: 0px;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: #2C1B8F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.centro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 380px;
+    width: 450px;
+    background-color: #DB742A;
+    border-radius: 5%;
+    box-shadow: 5px 6px 8px 1px rgba(0, 0, 0, 0.37);
+}
+
+.formulario > div {
+    padding: 10px;
+}
+
+
+.genero {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botãoDiv {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.botao {
+    background-color: #0D8F06;
+    color: white;
+    width: 100px;
+    padding: 5px;
+    margin: 0px auto;
+    text-align: center;
+    border-radius: 10%;
+    box-shadow: 2px 3px 8px 1px rgb(0 0 0 / 37%);
+    text-decoration: none;
+    transition-duration: 0.2s;
+}
+.botao:hover {
+    cursor: pointer;
+    background-color: #16df0b ;
+}
+
+.textoLink > a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.textoLink > a:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.none {
+    display: none;
+}

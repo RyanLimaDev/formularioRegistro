@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="main">
+        <section class="centro">
+            <h1 class="titulo">Login</h1>
+            <form action="" method="post" name="cadastro" class="formulario" id="formulario">
+                <div class="nome">
+                    <label for="username"> Usuario: </label>
+                    <input type="text" name="username" id="username" class="username">
+                </div>
+                <div class="senha">
+                    <label for="senha"> Senha: </label>
+                        <input type="password" name="senha" id="senha">
+                </div>
+                <div class="senha registro none">
+                    <label for="confirmarSenha"> Confirmar-senha: </label>
+                        <input type="password" name="confirmarSenha" id="confirmarSenha">
+                </div>
+                <div class="genero registro none">
+                    <label for="masculino"> Masculino </label>
+                        <input type="radio" name="genero" id="masculino" value="masculino">
+                    <label for="feminino"> Feminino </label>
+                        <input type="radio" name="genero" id="feminino" value="feminino">
+                </div>
+                <div class="botaoDiv">
+                    <div class="botao"><p>Enviar</p></div>
+                </div>
+            </form>
+            <p class="textoLink">Não possui uma conta? Faça uma <a class="link">clicando aqui</a>.</p>
+        </section>
+    </main>
+    <script src="javascript.js"></script>
+</body>
+</html>
+
+<!--Já possui conta? Entre <a>clicando aqui</a>.-->
