@@ -71,3 +71,8 @@
 .none {
     display: none;
 }
+.error-text{
+    margin-top: 2px;
+    color: red;
+    font-size: 14px;
+}
