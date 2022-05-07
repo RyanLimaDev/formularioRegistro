@@ -15,7 +15,17 @@ class Formulario {
     */
 
     conectar() {
-        console.log('Conectando')
+        const user = this.formulario.querySelector('#username').value;
+        const senha = this.formulario.querySelector('#senha').value;
+
+        const options = {mode: 'no-cors'};
+
+        fetch(`https://crudapiproject.azurewebsites.net/api/user/login?user=${user}&password=${senha}`)
+        .then((resposta) => {
+            console.log(resposta.body)
+            return resposta.json()})
+        .then(json => console.log(json))
+        .catch(err => console.log(err))
     }
 
     registro() {
@@ -46,8 +56,7 @@ class Formulario {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify(obj),
-                mode: 'no-cors'
+                body: JSON.stringify(obj)
             };
     
             // Requisição post
